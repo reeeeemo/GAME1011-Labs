@@ -1,2 +1,5 @@
 ﻿  Character.cpp
+  main.cpp
+E:\GAME1011-Labs\GAME1001_W2023_Lab2\GAME1001_W2023_Lab2\main.cpp(142,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
   GAME1001_W2023_Lab2.vcxproj -> E:\GAME1011-Labs\GAME1001_W2023_Lab2\x64\Debug\GAME1001_W2023_Lab2.exe

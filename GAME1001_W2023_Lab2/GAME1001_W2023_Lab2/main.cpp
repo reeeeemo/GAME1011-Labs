@@ -67,6 +67,10 @@ int main() {
 			InspectCharacter();
 			break;
 		case '3': // 3. Compare 2 Characters
+			if (createdCharacters.size() < 2) {
+				std::cout << "\nAtleast 2 characters needed to compare!\n";
+				break;
+			}
 			CompareCharacters();
 			break;
 		default: // 4. Exit (or if somehow input slips past)
