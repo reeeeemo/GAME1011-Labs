@@ -11,16 +11,16 @@ class Player : public GameObject
 {
 public:
 	// Abstract functions.
-	void NormalAttack() override;
+	void NormalAttack() override final;
 	virtual void SpecialAttack();
 
 	// Accessors
-	std::string GetName();
-	int GetHP();
+	std::string GetName() const;
+	int GetHP() const;
 
 	// Mutators
-	void SetName(std::string inputName);
-	void SetHP(int inputHealth);
+	void SetName(const std::string inputName);
+	void SetHP(const int inputHealth);
 protected:
 	std::string name;
 	int current_health;
@@ -32,13 +32,13 @@ class Enemy : public GameObject
 {
 public:
 	// Abstract Functions.
-	void NormalAttack() override;
+	void NormalAttack() override final;
 	virtual void TauntPlayer();
 
 	// Accessors.
-	int GetHP();
+	int GetHP() const;
 	// Mutators.
-	void SetHP(int inputHealth);
+	void SetHP(const int inputHealth);
 
 protected:
 	int current_health;
