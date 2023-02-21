@@ -12,7 +12,7 @@ class Player : public GameObject
 public:
 	// Abstract functions.
 	void NormalAttack() override final;
-	virtual void SpecialAttack();
+	virtual void SpecialAttack() = 0;
 
 	// Accessors
 	std::string GetName() const;
@@ -33,7 +33,7 @@ class Enemy : public GameObject
 public:
 	// Abstract Functions.
 	void NormalAttack() override final;
-	virtual void TauntPlayer();
+	virtual void TauntPlayer() = 0;
 
 	// Accessors.
 	int GetHP() const;
