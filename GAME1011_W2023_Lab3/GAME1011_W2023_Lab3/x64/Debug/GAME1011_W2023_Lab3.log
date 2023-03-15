@@ -1,2 +1,5 @@
-﻿  Messager.cpp
+﻿  DataSorter.cpp
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\DataSorter.cpp(5,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
   GAME1011_W2023_Lab3.vcxproj -> E:\GAME1011-Labs\GAME1011_W2023_Lab3\x64\Debug\GAME1011_W2023_Lab3.exe

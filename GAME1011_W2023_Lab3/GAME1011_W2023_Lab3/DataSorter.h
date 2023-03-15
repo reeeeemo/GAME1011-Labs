@@ -6,7 +6,9 @@
 
 class DataSorter
 {
-	static void Sort(std::vector<int> input_list);
+public:
+	static std::vector<int> Sort(std::vector<int> input_list);
+private:
 
 };
 

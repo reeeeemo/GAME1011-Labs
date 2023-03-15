@@ -7,7 +7,7 @@
 int main() {
 	Messager::WelcomePlayer();
 
-	std::vector<int> temp =  Messager::AskForListInput();
+	std::vector<int> temp = DataSorter::Sort(Messager::AskForListInput());
 
 	Messager::OutputList(temp);
 	return 0;
