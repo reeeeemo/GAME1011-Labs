@@ -130,10 +130,12 @@
     <ClCompile Include="DataSorter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Messager.cpp" />
+    <ClCompile Include="UnorderedArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataSorter.h" />
     <ClInclude Include="Messager.h" />
+    <ClInclude Include="UnorderedArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
