@@ -1,14 +1,23 @@
-#include "Messager.h"
-#include "DataSorter.h"
-
 #include <vector>
 #include <iostream>
+
+#include "Messager.h"
+#include "UnorderedArray.h"
+
 
 int main() {
 	Messager::WelcomePlayer();
 
-	std::vector<int> temp = DataSorter::Sort(Messager::AskForListInput());
+	UnorderedArray<float> float_array = UnorderedArray<float>(3);
 
-	Messager::OutputList(temp);
+	float_array.push_back(0.5f);
+	float_array.push_back(0.3f);
+	float_array.push_back(0.1f);
+
+	float_array.Sort();
+
+	Messager::OutputList(float_array);
+
+	float_array.clear();
 	return 0;
 }

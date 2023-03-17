@@ -1,5 +1,9 @@
-﻿  DataSorter.cpp
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\DataSorter.cpp(5,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  Messager.cpp
   main.cpp
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(20,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(15): message : while compiling class template member function 'UnorderedArray<float>::UnorderedArray(int)'
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\main.cpp(11): message : see reference to function template instantiation 'UnorderedArray<float>::UnorderedArray(int)' being compiled
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\main.cpp(11): message : see reference to class template instantiation 'UnorderedArray<float>' being compiled
   Generating Code...
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(75): warning C4715: 'UnorderedArray<float>::operator[]': not all control paths return a value
   GAME1011_W2023_Lab3.vcxproj -> E:\GAME1011-Labs\GAME1011_W2023_Lab3\x64\Debug\GAME1011_W2023_Lab3.exe

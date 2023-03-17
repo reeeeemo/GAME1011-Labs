@@ -1,5 +1,4 @@
 #include "Messager.h"
-#include <iostream>
 
 /* Static variable initializers. */
 std::vector<int> Messager::input;
@@ -39,15 +38,3 @@ void Messager::GetListInput(int numOfInputs)
 	}
 }
 
-/* Outputting whatever list of data types it is given. */
-void Messager::OutputList(std::vector<int> input_list)
-{
-	for (int i = 0; i < input_list.size(); i++) {
-		if (input_list[i] == input_list.back()) {
-			std::cout << input_list[i] << std::endl;
-		}
-		else {
-			std::cout << input_list[i] << ", ";
-		}
-	}
-}
