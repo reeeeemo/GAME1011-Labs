@@ -8,16 +8,17 @@
 int main() {
 	Messager::WelcomePlayer();
 
-	UnorderedArray<float> float_array = UnorderedArray<float>(3);
-
-	float_array.push_back(0.5f);
-	float_array.push_back(0.3f);
-	float_array.push_back(0.1f);
-
+	UnorderedArray<int> float_array = UnorderedArray<int>(3);
+	
+	float_array.push_back(1);
+	float_array.push_back(0);
+	float_array.push_back(6);
+	
 	float_array.Sort();
 
 	Messager::OutputList(float_array);
-
+	
+	
 	float_array.clear();
 	return 0;
 }

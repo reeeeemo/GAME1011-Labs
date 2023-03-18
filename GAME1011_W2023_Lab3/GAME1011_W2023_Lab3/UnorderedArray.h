@@ -5,10 +5,11 @@
 #include <cstring>
 #include <limits>
 #include <array>
-
+#include <cassert>
+#include <iostream>
 
 template<typename DataType> 
-struct UnorderedArray
+class UnorderedArray
 {
 public:
 	/* Constructor for custom array that initializes and sets memory for array. */
@@ -33,9 +34,11 @@ public:
 	/* Push in a new item if possible. */
 	void push_back(DataType value)
 	{
+		assert(m_array != nullptr);
 		if (m_numElements >= m_maxSize) { // If data is greater than or equal to max size, stop pushing
 			return;
 		}
+
 		m_array[m_numElements] = value;
 		m_numElements++;
 	}
@@ -69,7 +72,7 @@ public:
 	/* Overloading the [] operator to return an index value. */
 	DataType& operator[](int index)
 	{
-		if (index <= m_maxSize) { // No going outside the bounds of the array.
+		if (index < m_numElements) { // No going outside the bounds of the array.
 			return m_array[index];
 		}
 	}
