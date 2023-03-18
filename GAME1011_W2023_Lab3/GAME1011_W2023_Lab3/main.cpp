@@ -3,22 +3,19 @@
 
 #include "Messager.h"
 #include "UnorderedArray.h"
-
+#include "SearchType.h"
+#include <string>
 
 int main() {
 	Messager::WelcomePlayer();
 
-	UnorderedArray<int> float_array = UnorderedArray<int>(3);
+	UnorderedArray<int> float_array = Messager::AskForListInput<int>();
 	
-	float_array.push_back(1);
-	float_array.push_back(0);
-	float_array.push_back(6);
 	
-	float_array.Sort();
-
 	Messager::OutputList(float_array);
 	
-	
+	std::cout << float_array.SearchForValue(6, SearchType::BINARY);
+
 	float_array.clear();
 	return 0;
 }

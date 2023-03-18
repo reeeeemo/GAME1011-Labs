@@ -7,6 +7,7 @@
 #include <array>
 #include <cassert>
 #include <iostream>
+#include "SearchType.h"
 
 template<typename DataType> 
 class UnorderedArray
@@ -77,6 +78,23 @@ public:
 		}
 	}
 
+	DataType& SearchForValue(DataType value, SearchType type) {
+		if (type == SearchType::LINEAR) {
+			return m_array[LinearSearch(value, 0, m_numElements)];
+		}
+		else { // if type == SearchType::BINARY
+			return m_array[BinarySearch(value, 0, m_numElements)];
+		}
+	}
+
+	
+
+
+private:
+	int m_maxSize;
+	DataType* m_array;
+	int m_numElements;
+
 	/* Sorts the data of the array. */
 	void Sort()
 	{
@@ -89,10 +107,48 @@ public:
 		}
 	}
 
-private:
-	int m_maxSize;
-	DataType* m_array;
-	int m_numElements;
+	/* Finds the value in the array by splitting the array in half and checking it's lower and upper bounds. */
+	int BinarySearch(DataType value, int first, int last) {
+		int middle; // Mid-Point (where we will begin searching)
+
+		Sort(); // Sorting array!
+
+		// Did not find value in array
+		if (first > last) {
+			return -1;
+		}
+
+		middle = (first + last) / 2; // Mid-Point achieved!
+
+		// If the midpoint was the value
+		if (m_array[middle] == value) {
+			return middle;
+		}
+
+		// If we did not find the value, but is still in array
+		if (m_array[middle] < value) { // If it is in the upper half of the array
+			return BinarySearch(value, middle + 1, last);
+		}
+		else { // If it is in the lower half of the array
+			return BinarySearch(value, first, middle - 1);
+		}
+	}
+
+	/* Finds the value in the array by simply iterating through the array. */
+	int LinearSearch(DataType value, int first, int last) {
+		// Did not find value in the array
+		if (first >= last) {
+			return -1; // In worst case scenario, returns an out of bounds variable.
+		}
+
+		// Found the value
+		if (m_array[first] == value) {
+			return first;
+		}
+		else { // We have not found value yet, increment.
+			return LinearSearch(value, ++first, last);
+		}
+	}
 };
 
 #endif //!__UNORDEREDARRAY__
