@@ -1,11 +1,7 @@
 ﻿  main.cpp
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(74,2): error C3245: 'Messager::input': use of a variable template requires template argument list
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(45): message : see declaration of 'Messager::input'
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\main.cpp(12): message : see reference to function template instantiation 'UnorderedArray<int> Messager::AskForListInput<int>(void)' being compiled
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(78,2): error C2672: 'Messager::GetListInput': no matching overloaded function found
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(78,2): error C2783: 'void Messager::GetListInput(int)': could not deduce template argument for 'DataType'
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(30): message : see declaration of 'Messager::GetListInput'
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(80,9): error C3245: 'Messager::input': use of a variable template requires template argument list
-E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\Messager.h(45): message : see declaration of 'Messager::input'
-  Messager.cpp
-  Generating Code...
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(22,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(17): message : while compiling class template member function 'UnorderedArray<float>::UnorderedArray(int)'
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\main.cpp(12): message : see reference to function template instantiation 'UnorderedArray<float>::UnorderedArray(int)' being compiled
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\main.cpp(12): message : see reference to class template instantiation 'UnorderedArray<float>' being compiled
+E:\GAME1011-Labs\GAME1011_W2023_Lab3\GAME1011_W2023_Lab3\UnorderedArray.h(79): warning C4715: 'UnorderedArray<float>::operator[]': not all control paths return a value
+  GAME1011_W2023_Lab3.vcxproj -> E:\GAME1011-Labs\GAME1011_W2023_Lab3\x64\Debug\GAME1011_W2023_Lab3.exe
