@@ -18,12 +18,18 @@
     <ClInclude Include="Messager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ChallengeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Messager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChallengeManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

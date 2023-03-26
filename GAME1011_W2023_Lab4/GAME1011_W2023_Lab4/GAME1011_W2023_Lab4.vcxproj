@@ -127,9 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ChallengeManager.h" />
     <ClInclude Include="Messager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ChallengeManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Messager.cpp" />
   </ItemGroup>
