@@ -56,6 +56,14 @@ int Messager::GetIntInput()
 	return input;
 }
 
+void Messager::OutputArray(int arr[], int arraySize)
+{
+	std::cout << std::endl;
+	for (int i = 0; i < arraySize; i++) {
+		std::cout << arr[i] << std::endl;
+	}
+}
+
 int Messager::GetInput()
 {
 	int input;

@@ -1,2 +1,4 @@
-﻿  main.cpp
+﻿  ChallengeManager.cpp
+E:\GAME1011-Labs\GAME1011_W2023_Lab4\GAME1011_W2023_Lab4\ChallengeManager.cpp(9,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\GAME1011-Labs\GAME1011_W2023_Lab4\GAME1011_W2023_Lab4\ChallengeManager.cpp(35,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   GAME1011_W2023_Lab4.vcxproj -> E:\GAME1011-Labs\GAME1011_W2023_Lab4\x64\Debug\GAME1011_W2023_Lab4.exe

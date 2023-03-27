@@ -13,6 +13,7 @@ public:
 	static std::string GetStringInput();
 	static void OutputString(std::string);
 	static int GetIntInput(); // Technically this and GetChoiceInput() could be the same with parameters, but not necessary for this project.
+	static void OutputArray(int arr[], int arraySize); // This can be templated. But again not required for the project :)
 private:
 	static int GetInput();
 };

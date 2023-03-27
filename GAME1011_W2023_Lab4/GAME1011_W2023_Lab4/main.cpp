@@ -30,7 +30,8 @@ int main()
 			ChallengeManager::PerformQuicksort(Messager::GetIntInput());
 			break;
 		case 3:
-
+			Messager::OutputString("Please type a string to reverse.");
+			ChallengeManager::ReverseString(Messager::GetStringInput());
 			break;
 		case 4:
 			exitProgram = true;
