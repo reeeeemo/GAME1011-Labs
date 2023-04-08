@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Customer.cpp" />
     <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Pancake.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Customer.h" />
     <ClInclude Include="..\DynamicQueue.h" />
     <ClInclude Include="..\DynamicStack.h" />
+    <ClInclude Include="..\Pancake.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
