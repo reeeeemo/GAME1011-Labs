@@ -1,4 +1,3 @@
-﻿  Pancake.cpp
-  main.cpp
-  Generating Code...
+﻿  main.cpp
+C:\GAME1011-Labs\GAME1011_W2023_Lab5\main.cpp(22,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   GAME1011_W2023_Lab5.vcxproj -> C:\GAME1011-Labs\GAME1011_W2023_Lab5\x64\Debug\GAME1011_W2023_Lab5.exe

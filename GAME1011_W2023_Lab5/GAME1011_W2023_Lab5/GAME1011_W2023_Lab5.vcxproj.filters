@@ -38,5 +38,8 @@
     <ClInclude Include="..\Customer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\CustomExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

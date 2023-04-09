@@ -8,8 +8,12 @@
 // VERY important class, that has SO many uses
 struct Pancake
 {
-	Pancake();
-	~Pancake();
+	// Constructors!
+	Pancake(bool syrup, bool butter);
+	Pancake() = default;
+
+	// Destructor + Other Functions
+	~Pancake() = default;
 	void OutputPancake();
 	void PourSyrup();
 	void AddButter();

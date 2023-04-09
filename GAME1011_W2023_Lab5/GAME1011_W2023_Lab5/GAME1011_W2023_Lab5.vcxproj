@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Customer.h" />
+    <ClInclude Include="..\CustomExceptions.h" />
     <ClInclude Include="..\DynamicQueue.h" />
     <ClInclude Include="..\DynamicStack.h" />
     <ClInclude Include="..\Pancake.h" />

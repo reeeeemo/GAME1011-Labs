@@ -5,7 +5,9 @@
 struct Customer
 {
 	Customer();
-	~Customer();
+	~Customer() = default;
+
+	void ExitCustomer();
 };
 
 #endif //__CUSTOMER_H__

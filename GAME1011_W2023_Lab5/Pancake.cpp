@@ -1,13 +1,10 @@
 #include "Pancake.h"
 
-Pancake::Pancake()
+Pancake::Pancake(bool syrup, bool butter)
 {
-	hasSyrup = false;
-	hasButter = false;
+	hasSyrup = syrup;
+	hasButter = butter;
 }
-
-Pancake::~Pancake()
-{ }
 
 // Fun little output class :)
 void Pancake::OutputPancake()

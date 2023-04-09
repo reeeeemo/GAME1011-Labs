@@ -3,12 +3,10 @@
 #include <iostream>
 
 Customer::Customer()
-{
-	std::cout << "A customer is entering the pancake shop!\n";
-}
+{ }
 
-Customer::~Customer()
+void Customer::ExitCustomer()
 {
-	std::cout << "A customer is leaving the pancake shop!\n";
+	std::cout << "You have left the pancake shop!\n";
 }
 
